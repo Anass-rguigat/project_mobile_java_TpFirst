@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/titleWeight"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="400dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp" />
+
+        <!-- User Name Label and Input -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:textSize="18sp" />
+            <EditText
+                android:id="@+id/userName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="18sp"
+                android:background="@android:color/white"
+                android:hint="@string/palceholderName"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <!-- Password Label and Input -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Password"
+                android:textSize="18sp" />
+            <EditText
+                android:id="@+id/userPassword"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="18sp"
+                android:background="@android:color/white"
+                android:hint="@string/palceholderPassword"
+                android:inputType="textPassword"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <!-- Contact Label and Input -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Contact"
+                android:textSize="18sp"/>
+            <EditText
+                android:id="@+id/userContact"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="18sp"
+                android:background="@android:color/white"
+                android:hint="@string/palceholderContact"
+                android:inputType="number"
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+        <!-- Gender Radio Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Gender"
+                android:textSize="18sp"/>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/Male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/male"
+                    android:textSize="18sp"/>
+                <RadioButton
+                    android:id="@+id/Female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/female"
+                    android:textSize="18sp"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- Skills Checkbox -->
+
+        <!-- Country Spinner -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Skills"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/HTML"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/html"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/CSS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/css"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/PHP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/php"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="18sp"
+                android:text="@string/country"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <Spinner
+                android:id="@+id/SpCountry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:background="@android:color/white" />
+        </LinearLayout>
+
+        <!-- Comment Label and Input -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Comment"
+                android:textSize="18sp"/>
+            <EditText
+                android:id="@+id/usercomment"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:hint="@string/placeholderComment"
+                android:background="@android:color/white"
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtUserInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="@string/sbt2"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF8C00"
+            android:elevation="4dp"/>
+
+        <Button
+            android:id="@+id/back2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="@string/back1"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF8C00"
+            android:elevation="4dp"/>
+    </LinearLayout>
+</ScrollView>

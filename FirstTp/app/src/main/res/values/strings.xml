@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">FirstTp</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="nav1">go to calcul with image</string>
+    <string name="nav2">go to weights</string>
+    <string name="nav3">go listview</string>
+    <string name="nav4">go to listview personnaliser</string>
+
+
+    <string name="back1">back</string>
+    <string name="back2">back</string>
+    <string name="back3">back</string>
+    <string name="back4">back</string>
+
+    <string name="txt1">Welcome to application</string>
+    <string name="txt2">Welcome to calcul</string>
+    <string name="txt3">Welcome to weight</string>
+    <string name="txt4">Welcome to list view</string>
+    <string name="txt5">Welcome to list view personnaliser</string>
+
+
+    <string name="number1">Enter first number</string>
+    <string name="number2">Enter second number</string>
+
+    <string name="btnAdd">+</string>
+    <string name="btnSub">-</string>
+    <string name="btnMult">x</string>
+    <string name="btnDiv">÷</string>
+    <string-array name="listePays">
+        <item>Morocco</item>
+        <item>USA</item>
+        <item>UK</item>
+        <item>Algeria</item>
+        <item>Spain</item>
+        <item>France</item>
+    </string-array>
+
+
+    <string name="titleWeight">ANASS WEIGHT</string>
+    <string name="name">name</string>
+    <string name="palceholderName">Enter Name</string>
+    <string name="Password">Password</string>
+    <string name="palceholderPassword">Enter Password</string>
+    <string name="Contact">Contact</string>
+    <string name="palceholderContact">Enter Contact</string>
+    <string name="Gender">Gender</string>
+    <string name="male">male</string>
+    <string name="female">female</string>
+    <string name="Skills">Skills</string>
+    <string name="html">html</string>
+    <string name="css">css</string>
+    <string name="php">php</string>
+    <string name="country">Country</string>
+    <string name="Comment">Comment</string>
+    <string name="placeholderComment">Enter your comments...</string>
+    <string name="sbt2">submit</string>
+
+    <string name="titlelistview">Listview Simple</string>
+
+
+    <string name="titlelistviewPersonnaliser"> Info Listview Personnaliser</string>
+
+    <string name="nom">Nom</string>
+    <string name="prenom">Prenom</string>
+    <string name="tel">tel</string>
+
+</resources>
