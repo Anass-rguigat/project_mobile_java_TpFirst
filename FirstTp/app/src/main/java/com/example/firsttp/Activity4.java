@@ -19,57 +19,51 @@ public class Activity4 extends AppCompatActivity {
     List<HashMap<String, Object>> listeElts;
     ListEtdAdapter adapter;
     HashMap<String, Object> elts;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_4);
-        lvs= findViewById(R.id.listeStds);
+        lvs = findViewById(R.id.listeStds);
         back = findViewById(R.id.back4);
 
-        listeElts= new ArrayList<HashMap<String, Object>>();
+        listeElts = new ArrayList<>();
 
-        elts= new HashMap<String,Object>();
+        elts = new HashMap<>();
         elts.put("nom", "RGUIGAT");
         elts.put("prenom", "ANASS");
         elts.put("tel", "0624330555");
+        elts.put("image", R.drawable.image1);
         listeElts.add(elts);
 
-        elts= new HashMap<String,Object>();
+        elts = new HashMap<>();
         elts.put("nom", "RGUIGAT");
         elts.put("prenom", "FAYSSAL");
         elts.put("tel", "0624330555");
+        elts.put("image", R.drawable.image2);
         listeElts.add(elts);
 
-        elts= new HashMap<String,Object>();
+
+        elts = new HashMap<>();
         elts.put("nom", "RGUIGAT");
         elts.put("prenom", "YOUSSEF");
         elts.put("tel", "0624330555");
+        elts.put("image", R.drawable.image3);
         listeElts.add(elts);
 
-        elts= new HashMap<String,Object>();
-        elts.put("nom", "RGUIGAT");
-        elts.put("prenom", "RIYAD");
-        elts.put("tel", "0624330555");
-        listeElts.add(elts);
 
-        elts= new HashMap<String,Object>();
-        elts.put("nom", "RGUIGAT");
-        elts.put("prenom", "HABIB");
-        elts.put("tel", "0624330555");
-        listeElts.add(elts);
 
-        adapter= new ListEtdAdapter(listeElts, this);
-
+        adapter = new ListEtdAdapter(listeElts, this);
         lvs.setAdapter(adapter);
+
 
 
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i1= new Intent(getApplicationContext(),MainActivity.class);
+                Intent i1 = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(i1);
             }
         });
-
     }
 }
